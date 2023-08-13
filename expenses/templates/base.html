@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budgeting App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="{% url 'expense_list' %}">Budgeting App</a>
+      <span class="ml-auto"><strong>Admin: Parth Patel</strong></span>
+    </nav>
+    <div class="content mt-4">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+</body>
+</html>

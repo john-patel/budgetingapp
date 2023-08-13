@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Expense Detail</h2>
+  <table class="table">
+    <tr>
+      <th>Date</th>
+      <td>{{ expense.date }}</td>
+    </tr>
+    <tr>
+      <th>Day</th>
+      <td>{{ expense.day }}</td>
+    </tr>
+    <tr>
+      <th>Object Name</th>
+      <td>{{ expense.object_name }}</td>
+    </tr>
+    <tr>
+      <th>Object Price</th>
+      <td>{{ expense.object_price }}</td>
+    </tr>
+  </table>
+  <a href="{% url 'expense_update' expense.pk %}" class="btn btn-primary">Edit</a>
+  <a href="{% url 'expense_delete' expense.pk %}" class="btn btn-danger">Delete</a>
+{% endblock %}
