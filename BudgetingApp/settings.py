@@ -74,9 +74,9 @@ WSGI_APPLICATION = 'BudgetingApp.wsgi.application'
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'neondb',
+    'NAME': 'Budgeting_App_Database',
     'USER': 'parthpatelaa19',
-    'PASSWORD': 'admin',
+    'PASSWORD': 'KP1OAW5Moyqh',
     'HOST': 'ep-shy-snowflake-45355881.us-east-2.aws.neon.tech',
     'PORT': '5432',
   }
